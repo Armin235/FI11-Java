@@ -26,11 +26,12 @@ public class Controll
 	{
 		this.gui = new View(this);
 		hinzufuegen();
-		hinzufuegen2();
+		
 		starten();
 		addListener();
 		grosseUpdate(listePizza.getElementAt(0));
 		extraUpdate(listePizza.getElementAt(0));
+		hinzufuegen2();
 	}
 
 	// zuweisung zur gui
@@ -111,7 +112,7 @@ public class Controll
 			String zeile = null;
 			String name = null;
 			double preis = 0;
-			BufferedReader in = new BufferedReader(new FileReader("Speisekarte"));
+			BufferedReader in = new BufferedReader(new FileReader("H:\\Java\\Workspace\\Pizza GUI true\\bin\\Speisekarte"));
 			ArrayList<Grosse> temp = new ArrayList<Grosse>();
 			ArrayList<Extras> temp2 = new ArrayList<Extras>();
 			temp2.add(new Extras("käse", 4.50));
